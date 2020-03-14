@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
 <style>
-.newbody{
+.HotBod{
+  /* picnic css is going dark mode babyyyyy*/
   font-family: Tex-Gyre-Pagella, Serif;
+  color: #92bce0;
+  background-color: #000000;
+}
+
+#description{
+  display: none;
+  color: #92bce0;
+  position: absolute;
+  padding: 15px;
+}
+
+a:hover #description{
+  display: block;
 }
 </style>
 <!-------->
@@ -18,7 +32,7 @@
   <link rel="stylesheet" href="https://unpkg.com/picnic">
 </head>
 <!-------->
-<body class="newbody">
+<body class="HotBod">
   <div style="width:800px; margin:0 auto;">
     <br>
     <div>
@@ -27,11 +41,11 @@
               <b>Reese Porter</b> <br>
               <i>student in linguistics, spanish & computer science <a href="https://ufl.edu" target="_blank">@uf</a> </i><br>
               <div>
-                <a href="mailto:reeseporter@ufl.edu?Subject=FROM:website"> email</a> &nbsp;
-                <a href="https://github.com/reesporte" target="_blank">github</a> &nbsp;
-                <a href="list.html">bots</a> &nbsp;
-                <a href="https://github.com/reesporte/euler" target="_blank">euler</a> &nbsp;
-                <a href="https://open.spotify.com/artist/2hTNCSJbPnWOGNiNZjmYAR?si=fiVb_lb0RiuptDWHYBOeSA" target="_blank">music</a>
+                <a href="https://reesporte.itch.io/rigoberta" target="_blank">game <span id="description">i made a fun coin-based game!</span></a> &nbsp;
+                <a href="list.html">bots <span id="description">a list of bots i've made</span> </a> &nbsp;
+                <a href="https://github.com/reesporte/euler" target="_blank">euler <span id="description">i've done a few project euler problems (to prove i can program)</span></a> &nbsp;
+                <a href="https://github.com/reesporte" target="_blank">github <span id="description">this is also to prove i can program</span></a> &nbsp;
+                <a href="mailto:reeseporter@ufl.edu?Subject=FROM:website"> email <span id="description">no spam plz</span></a> &nbsp;
               </div>
               <hr>
       </div>
