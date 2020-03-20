@@ -8,6 +8,13 @@
   background-color: #000000;
 }
 
+#output{
+  display:block;
+  color: #92bce0;
+  position: absolute;
+  padding: 15px;
+}
+
 #description{
   display: none;
   color: #92bce0;
@@ -15,9 +22,19 @@
   padding: 15px;
 }
 
+.hidden{
+  display: none;
+  position: relative;
+}
+
+#toggle:checked ~ .hidden{
+  display: block;
+}
+
 a:hover #description{
   display: block;
 }
+
 </style>
 <!-------->
 <head>
@@ -31,6 +48,28 @@ a:hover #description{
 
   <link rel="stylesheet" href="https://unpkg.com/picnic">
 </head>
+
+<script type="text/javascript">
+  var responses = ['It is certain. ', ' It is decidedly so. ', ' Without a doubt. '
+                    , ' Yes - definitely. ', ' You may rely on it. ',
+                    ' As I see it, yes.', ' Most likely.', ' Outlook good.',
+                    ' Yes.', ' Signs point to yes.', ' Reply hazy, try again.',
+                    ' Ask again later.', ' Better not tell you now.',
+                    ' Cannot predict now.', ' Concentrate and ask again.',
+                    " Don't count on it.", ' My reply is no.',
+                    ' My sources say no.', ' Outlook not so good.',
+                    ' Very doubtful.'];
+
+  function choose(choices) {
+    var index = Math.floor(Math.random() * choices.length);
+    return choices[index];
+  }
+
+  function magic(){
+    var response = document.getElementById("output");
+    response.innerHTML = choose(responses);
+  }
+</script>
 <!-------->
 <body class="HotBod">
   <div style="width:800px; margin:0 auto;">
@@ -46,6 +85,10 @@ a:hover #description{
                 <a href="https://github.com/reesporte/euler" target="_blank">euler <span id="description">i've done a few project euler problems (to prove i can program)</span></a> &nbsp;
                 <a href="https://github.com/reesporte" target="_blank">github <span id="description">this is also to prove i can program</span></a> &nbsp;
                 <a href="mailto:reeseporter@ufl.edu?Subject=FROM:website"> email <span id="description">no spam plz</span></a> &nbsp;
+                <a onclick="magic()"><label for="toggle">magic 8ball</label>
+                    <input id="toggle" type="checkbox" style="display:none;">
+                    <span id="output" class="hidden"></span>
+                </a>
               </div>
               <hr>
       </div>
