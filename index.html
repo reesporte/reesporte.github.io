@@ -60,14 +60,20 @@ a:hover #description{
                     ' My sources say no.', ' Outlook not so good.',
                     ' Very doubtful.'];
 
+  const sleep = (milliseconds) => {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+  }
+
   function choose(choices) {
     var index = Math.floor(Math.random() * choices.length);
     return choices[index];
   }
 
-  function magic(){
+  async function magic(){
     var response = document.getElementById("output");
     response.innerHTML = choose(responses);
+    await sleep(3000);
+    response.innerHTML = "";
   }
 </script>
 <!-------->
