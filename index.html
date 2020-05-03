@@ -3,7 +3,7 @@
 <style>
 .HotBod{
   /* picnic css is going dark mode babyyyyy*/
-  font-family: Tex-Gyre-Pagella, Serif;
+  /* font-family: Tex-Gyre-Pagella, Serif; */
   color: #92bce0;
   background-color: #000000;
 }
@@ -40,7 +40,7 @@ a:hover #description{
 <head>
   <!-- basic website stuff -->
   <meta charset="utf-8">
-  <title>reese porter's home page</title>
+  <title>Reese Porter</title>
   <meta name="author" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -72,32 +72,32 @@ a:hover #description{
   async function magic(){
     var response = document.getElementById("output");
     response.innerHTML = choose(responses);
-    await sleep(3000);
+    await sleep(2000);
     response.innerHTML = "";
   }
 </script>
 <!-------->
 <body class="HotBod">
+
   <div style="width:800px; margin:0 auto;">
     <br>
     <div>
-        <img src="media/me.png" width="20%"> <br>
-      <div class="row">
+        <img src="media/me.jpg" width="35%"> <br>
+    </div>
+    <div>
               <b>Reese Porter</b> <br>
-              <i>student in linguistics, spanish & computer science <a href="https://ufl.edu" target="_blank">@uf</a> </i><br>
+              <i>Linguistics, Spanish, and Computer Science <a href="https://ufl.edu" target="_blank">UF alumnus.</a></i>
               <div>
-                <a href="https://reesporte.itch.io/rigoberta" target="_blank">game <span id="description">i made a fun game!</span></a> &nbsp;
-                <a href="list.html">bots <span id="description">a list of bots i've made</span> </a> &nbsp;
-                <a href="https://github.com/reesporte/euler" target="_blank">github <span id="description">i swear i can program</span></a> &nbsp;
-                <a href="mailto:reeseporter@ufl.edu?Subject=FROM:website"> email <span id="description">no spam please</span></a> &nbsp;
-                <a onclick="magic()"><label for="toggle">magic 8ball</label>
+                <a href="https://github.com/reesporte?tab=repositories&q=&type=source&language=" target="_blank">Github<span id="description">Source code for some of my projects</span></a> &nbsp;
+                <a href="mailto:reeseporter41@gmail.com?Subject=FROM:website">Contact<span id="description">Send me an email!</span></a> &nbsp;
+                <a href="list.html">Selected Projects <span id="description">Some projects I've done </span> </a> &nbsp;
+                <a onclick="magic()"><label for="toggle">Magic 8-ball</label>
                     <input id="toggle" type="checkbox" style="display:none;">
                     <span id="output" class="hidden"></span>
                 </a>
               </div>
               <hr>
       </div>
-    </div>
   </div>
 </body>
 <!---------->
