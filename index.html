@@ -4,15 +4,13 @@
 #output{
   display:block;
   color: #92bce0;
-  position: absolute;
-  padding: 15px;
+  position: relative;
 }
 
 #description{
   display: none;
   color: #92bce0;
-  position: absolute;
-  padding: 15px;
+  position: relative;
 }
 
 .hidden{
@@ -69,7 +67,7 @@ a:hover #description{
     response.innerHTML = "";
   }
 </script>
-<body class="HotBod">
+<body>
 
   <div style="width:800px; margin:0 auto;">
     <br>
@@ -79,14 +77,14 @@ a:hover #description{
     <div>
               <h3>Reese Porter</h3>
               <div>
-                <a href="https://github.com/reesporte" target="_blank"><img src="media/github.png" alt="github"> <!-- <span id="description">Source for some of my projects</span> --></a> &nbsp;
-                <a href="mailto:reeseporter@ufl.edu?Subject=FROM:website"><img src="media/email.png" alt="email"><!-- <span id="description">Send me an email</span> --> </a> &nbsp;
-                <a onclick="magic()"><label for="toggle"> <img src="media/8ball.png" alt="magic 8ball"> </label>
+                <a href="https://github.com/reesporte" target="_blank"><img src="media/github.png" alt="github"> <span id="description">Source for some of my projects</span></a> &nbsp;
+                <a href="mailto:reeseporter@ufl.edu?Subject=FROM:website"><img src="media/email.png" alt="email"> <span id="description">Send me an email</span> </a> &nbsp;
+                <a onclick="magic()"><label for="toggle"><img src="media/8ball.png" alt="magic 8ball"></label>
                     <input id="toggle" type="checkbox" style="display:none;">
                     <span id="output" class="hidden"></span>
                 </a>
-                <hr>
               </div>
+              <hr>
                 <i>
                   UF graduate with a love for linguistics, programming, and
                   data science. <br>
