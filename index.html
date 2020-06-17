@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
 <style>
-.HotBod{
-  /* picnic css is going dark mode babyyyyy*/
-  color: #FFFFFA;
-  background-color: #000000;
-}
-
 #output{
   display:block;
   color: #92bce0;
@@ -80,20 +74,24 @@ a:hover #description{
   <div style="width:800px; margin:0 auto;">
     <br>
     <div>
-        <img src="media/prof.png" width="35%"> <br>
+        <img src="media/prof.jpg" width="35%"> <br>
     </div>
     <div>
-              <b>Reese Porter</b> <br>
-              <i>Linguist and Programmer</i>
+              <h3>Reese Porter</h3>
               <div>
-                <a href="https://github.com/reesporte" target="_blank">Github<span id="description">Source code for some of my projects</span></a> &nbsp;
-                <a href="mailto:reeseporter41@gmail.com?Subject=FROM:website">Contact<span id="description">Send me an email!</span></a> &nbsp;
-                <a href="list.html">Selected Projects <span id="description">Some projects I've done </span> </a> &nbsp;
-                <a onclick="magic()"><label for="toggle">Magic 8-ball</label>
+                <a href="https://github.com/reesporte" target="_blank"><img src="media/github.png" alt="github"> <!-- <span id="description">Source for some of my projects</span> --></a> &nbsp;
+                <a href="mailto:reeseporter@ufl.edu?Subject=FROM:website"><img src="media/email.png" alt="email"><!-- <span id="description">Send me an email</span> --> </a> &nbsp;
+                <a onclick="magic()"><label for="toggle"> <img src="media/8ball.png" alt="magic 8ball"> </label>
                     <input id="toggle" type="checkbox" style="display:none;">
                     <span id="output" class="hidden"></span>
                 </a>
+                <hr>
               </div>
+                <i>
+                  UF graduate with a love for linguistics, programming, and
+                  data science. <br>
+                  Feel free to check out some of the <a href="list.html">projects</a> I've worked on!
+                </i>
       </div>
   </div>
 </body>

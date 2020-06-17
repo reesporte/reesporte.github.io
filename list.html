@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
-<style>
-.newbody{
-  color: #FFFFFA;
-  background-color: #000000;
-}
-</style>
 <!-------->
 <head>
   <meta charset="utf-8">
-  <title>Portfolio</title>
+  <title>Projects</title>
   <meta name="author" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,14 +12,15 @@
 </head>
 <body class="newbody">
   <div style="width:800px; margin:0 auto;">
-    <h2>Selected Projects</h2>
+    <h2>Projects</h2>
     <a href="https://github.com/reesporte?tab=repositories&q=&type=source&language=" target="_blank">Github</a> &nbsp;
     <a href="mailto:reeseporter41@gmail.com?Subject=FROM:website">Contact</a> &nbsp;
     <a href="index.html">Home</a>
-    <div >
+    <div>
       <hr>
-        <b>Determining Syntactic Features of English Registers with Linear Support Vector Machine</b> <br>
+        <h3>Determining Syntactic Features of English Registers with Linear SVM</h3>
         <i>An experimental project for a computational linguistics course.</i>
+        <img src="media/confusion_matrix.png" alt="a picture of a confusion matrix">
         <p>
           I worked on a group project for my computational linguistics class trying to
           identify the most useful syntactic features for training a linear SVC machine
@@ -34,23 +29,48 @@
           The poster is available for download <a href="media/poster.pdf">here</a>.
         </p>
     </div>
-    <div >
+    <div>
       <hr>
-        <b>The Rigoberta Game</b> <br>
-        <i>Play as Rigoberta Menchú Tum in a retro-style coin-based game.</i> <br> <br>
-        <iframe src="https://itch.io/embed/587565" width="208" height="167" frameborder="0"><a href="https://reesporte.itch.io/rigoberta">the rigoberta game by reesporte</a></iframe>
+        <h3>Predicting Minnesotan Traffic</h3>
+        <i>I learned time series forecasting using an ARIMA model.</i> <br>
+        <img src="media/forecast.png" alt="a picture of a time series forecast">
         <p>
-          I made this game to practice game design in C++. I built the game engine from scratch using
+          I made this to learn how to do basic time series forecasting in python.
+          I use an <a href="https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average">ARIMA model</a>
+          on <a href="https://archive.ics.uci.edu/ml/datasets/Metro+Interstate+Traffic+Volume">traffic data</a>
+          from the Twin Cities area. You can find the source on <a href="https://github.com/reesporte/time-series-forecasting">Github</a>.
+        </p>
+    </div>
+    <div>
+      <hr>
+        <h3>Singaporean Coconut Production</h3>
+        <i>An exploratory analysis of Singapore's failing coconut industry.</i>
+        <p>
+          Click <a href="media/coconuts.slides.html">here</a> for an interactive presentation. <br><br>
+
+          In the nation's first years an the independent Republic of Singapore, coconut production was fairly steady.
+          Soon, however, there was a steep decline in coconut production! Now, they're the
+          <a href="https://www.nationmaster.com/nmx/ranking/coconuts-net-production">worst in the world</a> at
+          producing coconuts. I intended to find out why. The answer likely won't surprise you.
+          You can find the source on <a href="https://github.com/reesporte/singapore-coconuts">Github</a>.
+        </p>
+    </div>
+    <div>
+      <hr>
+        <h3>The Rigoberta Game</h3>
+        <i>Play as Rigoberta Menchú Tum in a retro-style coin-based game.</i> <br>
+        <p>
+          I made this game to practice game design in C++. I built the game engine from "scratch" using
           <a href="https://www.sfml-dev.org/">SFML</a>. You can find the source on
           <a href="https://github.com/reesporte/rigoberta">Github</a>. The game is
           available for download <a href="https://reesporte.itch.io/rigoberta">here</a>.
         </p>
 
     </div>
-    <div >
+    <div>
         <hr>
-          <b>Bots</b> <br>
-          <i>Some bots I made because they make me laugh. Sometimes the source code is available on <a href="https://github.com/reesporte">Github</a>. </i><br>
+          <h3>Bots</h3>
+          <i>Some bots I made for fun. Sometimes the source code is available on <a href="https://github.com/reesporte">Github</a>. </i><br>
           <p>
             <a href="https://twitter.com/vRealHoroscopes" target="_blank">@vRealHoroscopes</a> - algorithmic horoscopes<br>
             <a href="https://twitter.com/jeopardywrong" target="_blank">@JeopardyWrong</a> - always-wrong contestant<br>
