@@ -1,5 +1,32 @@
 <!DOCTYPE html>
 <html>
+<style>
+#output{
+  display:block;
+  color: #92bce0;
+  position: relative;
+}
+
+#description{
+  display: none;
+  color: #92bce0;
+  position: relative;
+}
+
+.hidden{
+  display: none;
+  position: relative;
+}
+
+#toggle:checked ~ .hidden{
+  display: block;
+}
+
+a:hover #description{
+  display: block;
+}
+
+</style>
 <!-------->
 <head>
   <meta charset="utf-8">
@@ -10,12 +37,13 @@
   <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico"/>
   <link rel="stylesheet" href="picnic.css">
 </head>
+
 <body class="newbody">
   <div style="width:800px; margin:0 auto;">
     <h2>Projects</h2>
-    <a href="https://github.com/reesporte?tab=repositories&q=&type=source&language=" target="_blank">Github</a> &nbsp;
-    <a href="mailto:reeseporter41@gmail.com?Subject=FROM:website">Contact</a> &nbsp;
-    <a href="index.html">Home</a>
+    <a href="https://github.com/reesporte" target="_blank"><img src="media/github.png" alt="github"> <span id="description">Source for some of my projects</span></a> &nbsp;
+    <a href="mailto:reeseporter@ufl.edu?Subject=FROM:website"><img src="media/email.png" alt="email"> <span id="description">Send me an email</span> </a> &nbsp;
+    <a href="index.html"><img src="media/home.png" alt="home"> <span id="description">Back to my homepage</span> </a> &nbsp;
     <div>
       <hr>
         <h3>Determining Syntactic Features of English Registers with Linear SVM</h3>
