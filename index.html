@@ -26,6 +26,17 @@ a:hover #description{
   display: block;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.small_button {
+  padding: .2% .5%;
+  background-color: Transparent;
+
+}
+
 </style>
 <!-------->
 <head>
@@ -66,8 +77,13 @@ a:hover #description{
     await sleep(2000);
     response.innerHTML = "";
   }
+
+  function dark_mode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+  }
 </script>
-<body class="newbody">
+<body class="dark-mode">
 
   <div style="width:800px; margin:0 auto;">
     <br>
@@ -77,16 +93,18 @@ a:hover #description{
     <div>
               <h3>Reese Porter</h3>
               <div>
-                <a href="mailto:reesedporter@gmail.com"><img src="media/email.png" alt="email"> <span id="description">Send me an email</span> </a> &nbsp;
-                <a href="https://www.linkedin.com/in/reese-porter"><img src="media/linkedin.png" alt="linkedin"> <span id="description">See my LinkedIn</span> </a> &nbsp;
-                <a href="https://github.com/reesporte" target="_blank"><img src="media/github.png" alt="github"> <span id="description">Some of my projects</span></a> &nbsp;
-                <a onclick="magic()"><label for="toggle"><img src="media/8ball.png" alt="magic 8ball"></label>
-                    <input id="toggle" type="checkbox" style="display:none;">
-                    <span id="output" class="hidden"></span>
-                </a>
+                <a href="mailto:reesedporter@gmail.com"> <button class="small_button">✉️</button> <span id="description">Email</span> </a> &nbsp;
+                <a href="https://www.linkedin.com/in/reese-porter"> <button class="small_button">💼</button> <span id="description">LinkedIn</span> </a> &nbsp;
+                <a href="https://github.com/reesporte" target="_blank"> <button class="small_button">💾</button> <span id="description">Github</span></a> &nbsp;
+                <a><button class="small_button" onclick="dark_mode()">🌙</button></a> &nbsp;
+
               </div>
               <hr>
-                  I am a linguist / data scientist / programmer. <br>
+                  I am a linguist / data scientist / programmer.
+                  <a onclick="magic()"><label for="toggle"> <button class="small_button">🎱</button> </label>
+                      <input id="toggle" type="checkbox" style="display:none;">
+                      <span id="output" class="hidden"></span>
+                  </a>
       </div>
   </div>
 </body>
