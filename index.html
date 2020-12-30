@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
   <style>
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  body{
+    background-color: #ffffe0;
+    color: #000055;
+  }
   #magic{
     display: none;
-    color: #bdd6fc;
     position: absolute;
   }
   a:hover #magic{
@@ -11,7 +18,6 @@
   }
   #description{
     display: none;
-    color: #bdd6fc;
     position: absolute;
   }
   a:hover #description{
@@ -22,8 +28,9 @@
     color: white;
   }
   .small_button {
-    padding: .2% .5%;
+    padding: 1% 1%;
     background-color: Transparent;
+    border: none;
   }
   </style>
   <head>
@@ -31,43 +38,23 @@
     <title>Reese Porter</title>
     <meta name="author" content="Reese Porter">
     <meta name="description" content="Linguistics, programming, and data science.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
     <link rel="canonical" href="https://reesporte.github.io/">
-    <link rel="stylesheet" href="picnic.css">
   </head>
-  <script type="text/javascript">
-    var responses = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely.', 'You may rely on it.','As I see it, yes.', 'Most likely.', 'Outlook good.','Yes.', 'Signs point to yes.', 'Reply hazy, try again.','Ask again later.', 'Better not tell you now.','Cannot predict now.', 'Concentrate and ask again.',"Don't count on it.",'My reply is no.','My sources say no.','Outlook not so good.','Very doubtful.'];
-    function choose(choices) {
-      var index = Math.floor(Math.random() * choices.length);
-      return choices[index];
-    }
-    function magic(){
-      var response = document.getElementById("magic");
-      response.innerHTML = choose(responses).toLowerCase();
-    }
-    function dark_mode() {
-     var element = document.body;
-     element.classList.toggle("dark-mode");
-    }
-  </script>
+  <script type="text/javascript">var responses = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely.', 'You may rely on it.','As I see it, yes.', 'Most likely.', 'Outlook good.','Yes.', 'Signs point to yes.', 'Reply hazy, try again.','Ask again later.', 'Better not tell you now.','Cannot predict now.', 'Concentrate and ask again.',"Don't count on it.",'My reply is no.','My sources say no.','Outlook not so good.','Very doubtful.'];function choose(choices) {var index = Math.floor(Math.random() * choices.length);return choices[index];};function magic(){var response = document.getElementById("magic");response.innerHTML = choose(responses).toLowerCase();};function dark_mode() {var element = document.body;element.classList.toggle("dark-mode");}</script>
   <body class="dark-mode">
-    <div style="width:800px; margin:0 auto;">
-      <br>
+    <div style="width:33%; margin:0 auto;">
       <div>
-        <img src="media/prof.jpg" width="35%"> <br>
-      </div>
-      <div>
-        <p>
-          <h3>Reese Porter</h3>
-          I am a linguist, data scientist, and programmer.
-        </p>
-        <div>
-          <a href="mailto:reesedporter@gmail.com"> <button class="small_button">✉️</button> <span id="description">email</span> </a> &nbsp;
-          <a href="https://www.linkedin.com/in/reese-porter"> <button class="small_button">💼</button> <span id="description">linkedin</span> </a> &nbsp;
-          <a href="https://github.com/reesporte" target="_blank"> <button class="small_button">💾</button> <span id="description">github</span></a> &nbsp;
-          <a><button class="small_button" onclick="dark_mode()">🌙</button> <span id="description">dark/light</span>  </a> &nbsp;
-          <a onmouseover="magic()">🎱<span id="magic">unfortunately, you need javascript to use the magic 8ball</span></a> &nbsp;
+        <h1>Reese Porter</h1>
+        <p style="font-size:175%;">I am a programmer, data scientist, and linguist.</p>
+        <hr>
+        <div style="font-size:175%;">
+            <a href="mailto:reesedporter@gmail.com">✉️<span id="description">email</span> </a> &nbsp;
+            <a href="https://www.linkedin.com/in/reese-porter" target="_blank">💼<span id="description">linkedin</span> </a> &nbsp;
+            <a href="https://github.com/reesporte" target="_blank">💾<span id="description">github</span></a> &nbsp;
+            <a onmouseover="magic()">🎱<span id="magic">unfortunately, you need javascript to use the magic 8ball</span></a> &nbsp;
+            <a onclick="dark_mode()">🌙<span id="description">dark mode/light mode</span></a> &nbsp;
         </div>
       </div>
     </div>
