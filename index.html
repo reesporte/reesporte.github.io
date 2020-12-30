@@ -1,111 +1,75 @@
 <!DOCTYPE html>
 <html>
-<style>
-#output{
-  display:block;
-  color: #92bce0;
-  position: relative;
-}
-
-#description{
-  display: none;
-  color: #92bce0;
-  position: relative;
-}
-
-.hidden{
-  display: none;
-  position: relative;
-}
-
-#toggle:checked ~ .hidden{
-  display: block;
-}
-
-a:hover #description{
-  display: block;
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-.small_button {
-  padding: .2% .5%;
-  background-color: Transparent;
-
-}
-
-</style>
-<!-------->
-<head>
-  <!-- basic website stuff -->
-  <meta charset="utf-8">
-  <title>Reese Porter</title>
-  <meta name="author" content="Reese Porter">
-  <meta name="description" content="Linguistics, programming, and data science.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico"/>
-  <link rel="canonical" href="https://reesporte.github.io/">
-  <link rel="stylesheet" href="picnic.css">
-</head>
-
-<script type="text/javascript">
-  var responses = ['It is certain. ', ' It is decidedly so. ', ' Without a doubt. '
-                    , ' Yes - definitely. ', ' You may rely on it. ',
-                    ' As I see it, yes.', ' Most likely.', ' Outlook good.',
-                    ' Yes.', ' Signs point to yes.', ' Reply hazy, try again.',
-                    ' Ask again later.', ' Better not tell you now.',
-                    ' Cannot predict now.', ' Concentrate and ask again.',
-                    " Don't count on it.", ' My reply is no.',
-                    ' My sources say no.', ' Outlook not so good.',
-                    ' Very doubtful.'];
-
-  const sleep = (milliseconds) => {
-  return new Promise(resolve => setTimeout(resolve, milliseconds))
+  <style>
+  #magic{
+    display: none;
+    color: #bdd6fc;
+    position: absolute;
   }
-
-  function choose(choices) {
-    var index = Math.floor(Math.random() * choices.length);
-    return choices[index];
+  a:hover #magic{
+    display: block;
   }
-
-  async function magic(){
-    var response = document.getElementById("output");
-    response.innerHTML = choose(responses);
-    await sleep(2000);
-    response.innerHTML = "";
+  #description{
+    display: none;
+    color: #bdd6fc;
+    position: absolute;
   }
-
-  function dark_mode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
+  a:hover #description{
+    display: block;
   }
-</script>
-<body class="dark-mode">
-
-  <div style="width:800px; margin:0 auto;">
-    <br>
-    <div>
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .small_button {
+    padding: .2% .5%;
+    background-color: Transparent;
+  }
+  </style>
+  <head>
+    <meta charset="utf-8">
+    <title>Reese Porter</title>
+    <meta name="author" content="Reese Porter">
+    <meta name="description" content="Linguistics, programming, and data science.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico"/>
+    <link rel="canonical" href="https://reesporte.github.io/">
+    <link rel="stylesheet" href="picnic.css">
+  </head>
+  <script type="text/javascript">
+    var responses = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely.', 'You may rely on it.','As I see it, yes.', 'Most likely.', 'Outlook good.','Yes.', 'Signs point to yes.', 'Reply hazy, try again.','Ask again later.', 'Better not tell you now.','Cannot predict now.', 'Concentrate and ask again.',"Don't count on it.",'My reply is no.','My sources say no.','Outlook not so good.','Very doubtful.'];
+    function choose(choices) {
+      var index = Math.floor(Math.random() * choices.length);
+      return choices[index];
+    }
+    function magic(){
+      var response = document.getElementById("magic");
+      response.innerHTML = choose(responses).toLowerCase();
+    }
+    function dark_mode() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+    }
+  </script>
+  <body class="dark-mode">
+    <div style="width:800px; margin:0 auto;">
+      <br>
+      <div>
         <img src="media/prof.jpg" width="35%"> <br>
-    </div>
-    <div>
-              <h3>Reese Porter</h3>
-              <div>
-                <a href="mailto:reesedporter@gmail.com"> <button class="small_button">✉️</button> <span id="description">Email</span> </a> &nbsp;
-                <a href="https://www.linkedin.com/in/reese-porter"> <button class="small_button">💼</button> <span id="description">LinkedIn</span> </a> &nbsp;
-                <a href="https://github.com/reesporte" target="_blank"> <button class="small_button">💾</button> <span id="description">Github</span></a> &nbsp;
-                <a><button class="small_button" onclick="dark_mode()">🌙</button></a> &nbsp;
-
-              </div>
-              <hr>
-                  I am a linguist / data scientist / programmer.
-                  <a onclick="magic()"><label for="toggle"> <button class="small_button">🎱</button> </label>
-                      <input id="toggle" type="checkbox" style="display:none;">
-                      <span id="output" class="hidden"></span>
-                  </a>
       </div>
-  </div>
-</body>
+      <div>
+        <p>
+          <h3>Reese Porter</h3>
+          I am a linguist, data scientist, and programmer.
+        </p>
+        <div>
+          <a href="mailto:reesedporter@gmail.com"> <button class="small_button">✉️</button> <span id="description">email</span> </a> &nbsp;
+          <a href="https://www.linkedin.com/in/reese-porter"> <button class="small_button">💼</button> <span id="description">linkedin</span> </a> &nbsp;
+          <a href="https://github.com/reesporte" target="_blank"> <button class="small_button">💾</button> <span id="description">github</span></a> &nbsp;
+          <a><button class="small_button" onclick="dark_mode()">🌙</button> <span id="description">dark/light</span>  </a> &nbsp;
+          <a onmouseover="magic()">🎱<span id="magic">unfortunately, you need javascript to use the magic 8ball</span></a> &nbsp;
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
