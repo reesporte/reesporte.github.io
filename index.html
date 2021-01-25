@@ -45,17 +45,17 @@
   </head>
   <script type="text/javascript">var responses = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely.', 'You may rely on it.','As I see it, yes.', 'Most likely.', 'Outlook good.','Yes.', 'Signs point to yes.', 'Reply hazy, try again.','Ask again later.', 'Better not tell you now.','Cannot predict now.', 'Concentrate and ask again.',"Don't count on it.",'My reply is no.','My sources say no.','Outlook not so good.','Very doubtful.'];function choose(choices) {var index = Math.floor(Math.random() * choices.length);return choices[index];};function magic(){var response = document.getElementById("magic");response.innerHTML = choose(responses).toLowerCase();};function dark_mode() {var element = document.body;element.classList.toggle("dark-mode");}</script>
   <body class="dark-mode">
-    <div style="width:33%; margin:0 auto;">
+    <div style="width:40%; margin:0 auto;">
       <div>
         <h1>Reese Porter</h1>
-        <p style="font-size:150%;">I am a programmer, data scientist, and linguist.</p>
+        <code style="font-size:150%;">{ data scientist, software developer, linguist }</code>
         <hr>
         <div style="font-size:150%;">
             <a href="mailto:reesedporter@gmail.com">✉️<span id="description">email</span> </a> &nbsp;
             <a href="https://www.linkedin.com/in/reese-porter" target="_blank">💼<span id="description">linkedin</span> </a> &nbsp;
             <a href="https://github.com/reesporte" target="_blank">💾<span id="description">github</span></a> &nbsp;
             <a onmouseover="magic()">🎱<span id="magic">unfortunately, you need javascript to use the magic 8ball</span></a> &nbsp;
-            <a onclick="dark_mode()">🌙<span id="description">dark mode/light mode</span></a> &nbsp;
+            <a href="#" onclick="dark_mode()">🌙<span id="description">dark/light</span></a> &nbsp;
         </div>
       </div>
     </div>
