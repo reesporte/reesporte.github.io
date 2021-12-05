@@ -11,37 +11,80 @@
         <link rel="canonical" href="https://reesporte.github.io/">
     </head>
     <style>
-        html {background-color: blanchedalmond; color: midnightblue; zoom: 150%; font-family:monospace; margin: 0 auto; max-width: 300px; text-align: center;}
-        li {list-style-type: none; display: inline-block;}
-        a {color:midnightblue; text-decoration-style:dotted;}
-        a:hover {text-decoration-style:solid;}
+        @keyframes slidey {
+            0%,100% {background-position: 0 0;}
+            50% {background-position: 100% 0;}
+        }
+        html {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+; font-size:.85em; background-color: #fefafa;}
+        body {line-height: 1.5; width: 90%;  max-width: 1000px;  margin: 3em auto;}
+        h1 {margin-top: 0;  font-size: large;}
+        .face {float: left; padding: 1.25em; padding-top: 0;}
+        #text {padding: 1.25em; padding-top: 0;  overflow: hidden;}
+        a {display:inline-block; color: inherit; text-decoration: underline dotted;}
+        a:hover {background: linear-gradient(to right, salmon, dodgerblue, salmon); -webkit-background-clip: text; background-clip: text; color: transparent; animation: slidey 3s ease-in-out infinite; background-size: 400% 100%; text-decoration: underline solid;}
     </style>
     <body>
-        <div id="introduction">
-            <img src="headshot.png" width="100" alt="Reese Porter headshot">
+        <div class="face">
+            <img src="headshot.jpeg" width="300">
+        </div>
+        <div id="text">
             <h1>
                 Reese Porter
             </h1>
+            <hr>
             <p>
-                Software engineer, linguist
+                Hi! I'm Reese.
             </p>
-        </div>
-        <div id="info">
-            <li>
-                <a href="mailto:reesedporter@gmail.com">
-                    email
+            <p>
+                Right now, I work on a distributed database at
+                <a href="https://www.molecula.com/featurebase/">
+                    Molecula.
                 </a>
-            </li>
-            <li>
-                <a href="https://github.com/reesporte">
-                    github
+                Before that, I was at the
+                <a href="https://www.usps.gov">
+                    USPS,
                 </a>
-            </li>
-            <li>
-                <a href="https://linkedin.com/in/reese-porter">
-                    linkedin
+                building REST APIs, developing machine learning models on time series data, and doing full stack web development.
+            </p>
+            <p>
+                Before that, I studied linguistics, computer science, Spanish, and teaching English as a second language (TESL) at the
+                <a href="https://ufl.edu">
+                    University of Florida.
                 </a>
-            </li>
+                While I was there, I had the opportunity to work as a research assistant in the
+                <a href="https://blab.lin.ufl.edu/">
+                    Brain, Language, and Bilingualism lab
+                </a>
+                studying the
+                <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01288/full">
+                    neural correlates of bilingual codeswitching.
+                </a>
+            </p>
+            <p>
+                Right now, I'm interested in distributed systems, compilers, walking around in the snow, playing my instruments, and drinking too much coffee.
+            </p>
+            <hr>
+            <p>
+                Here are some more places you can find me:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://github.com/reesporte">
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/reese-porter">
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:reesedporter@gmail.com">
+                        Email
+                    </a>
+                </li>
+            </ul>
         </div>
     </body>
 </html>
