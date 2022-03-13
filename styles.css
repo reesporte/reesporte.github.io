@@ -14,16 +14,19 @@ html {
 body {
   line-height: 1.5;
   max-width: 800px;
+  font-size: large;
   margin: 1.5em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 h1 {
   margin-top: 0;
-  font-size: large;
+  font-size: x-large;
 }
 .chunk {
   padding: 1.25em;
   padding-top: 0;
-  overflow: hidden;
 }
 a {
   display: inline-block;
