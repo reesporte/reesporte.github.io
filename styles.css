@@ -20,11 +20,42 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+label {
+  padding: 1.25em;
+  padding-top: 0;
+  block-size: fit-content;
+}
+label:hover {
+  cursor: pointer;
+}
+label:hover ~ .chunk {
+  cursor: pointer;
+  background: linear-gradient(to right, salmon, dodgerblue, salmon);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: slidey 3s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+input[type="checkbox"] {
+  position: absolute;
+  display: none;
+}
+input[type="checkbox"]:checked ~ .chunk {
+  font-family: "Wingdings";
+  background: linear-gradient(to right, salmon, dodgerblue, salmon);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: slidey 3s ease-in-out infinite;
+  background-size: 400% 100%;
+}
 h1 {
   margin-top: 0;
   font-size: x-large;
 }
 .chunk {
+  font-family: serif;
   padding: 1.25em;
   padding-top: 0;
 }
