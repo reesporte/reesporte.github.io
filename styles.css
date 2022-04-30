@@ -7,7 +7,7 @@ body {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   display: flex;
   flex-wrap: wrap;
-  max-width: 880px;
+  max-width: 800px;
   margin: 0 auto;
 }
 h1 {
@@ -15,7 +15,7 @@ h1 {
   font-size: x-large;
 }
 .chunk {
-  padding: 1.25em;
+  padding: 1.5em;
 }
 a {
   display: inline-block;
@@ -27,7 +27,7 @@ a:hover {
   color: #fce517;
 }
 label {
-  padding-top: 1.25em;
+  padding-top: 1.5em;
   block-size: fit-content;
 }
 label:hover {
