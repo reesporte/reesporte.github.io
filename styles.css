@@ -1,10 +1,9 @@
 body {
   line-height: 1.5;
   font-size: large;
-  background: #202020;
-  color: #cacaca;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #202020;
+  background: #fbfefe;
+  font-family: georgia, serif;
   display: flex;
   flex-wrap: wrap;
   max-width: 800px;
@@ -24,7 +23,7 @@ a {
 }
 a:hover {
   text-decoration: underline dotted;
-  color: #fce517;
+  color: #1aabab;
 }
 label {
   padding-top: 1.5em;
