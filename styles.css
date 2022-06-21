@@ -1,33 +1,10 @@
 body {
-  line-height: 1.5;
-  font-size: large;
-  color: #202020;
-  background: #fbfefe;
-  font-family: georgia, serif;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin: 0 auto;
-}
-h1 {
-  margin-top: 0;
-  font-size: x-large;
-}
-.chunk {
-  padding: 1.5em;
+  font-family: monospace;
 }
 a {
   display: inline-block;
-  text-decoration: none;
-  color: #757575;
-}
-a:hover {
-  text-decoration: underline dotted;
-  color: #1aabab;
 }
 label {
-  padding-top: 1.5em;
-  padding-left: 1.5em;
   block-size: fit-content;
 }
 label:hover {
@@ -39,4 +16,11 @@ input[type="checkbox"] {
 }
 input[type="checkbox"]:checked ~ .chunk {
   font-family: "Wingdings";
+}
+ul {
+  list-style: none;
+    padding: 0;
+}
+ul li {
+  display: inline;
 }
