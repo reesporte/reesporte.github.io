@@ -1,26 +1,33 @@
+@font-face {
+  font-family: LaTeXTypeBeat;
+  src: url(font.ttf);
+}
 body {
-  font-family: monospace;
+  background: #ffe0c5;
+  color: #2a2622;
+  font-family: LaTeXTypeBeat, serif;
+  font-size: large;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em 1em 0 1em;
 }
 a {
+  color: blue;
+  font-weight: 900;
   display: inline-block;
+  text-decoration: none;
 }
-label {
-  block-size: fit-content;
-}
-label:hover {
-  cursor: pointer;
-}
-input[type="checkbox"] {
-  position: absolute;
-  display: none;
-}
-input[type="checkbox"]:checked ~ .chunk {
-  font-family: "Wingdings";
+a:hover {
+  text-decoration: wavy underline;
 }
 ul {
   list-style: none;
-    padding: 0;
+  padding: 0;
 }
 ul li {
   display: inline;
+}
+img {
+  border-radius: 0.25em;
 }
