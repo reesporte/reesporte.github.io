@@ -31,3 +31,15 @@ ul li {
 img {
   border-radius: 0.25em;
 }
+
+a .hoverer {
+  display: none;
+}
+
+a:hover .nonhoverer {
+  display: none;
+}
+
+a:hover .hoverer {
+  display: inline;
+}
