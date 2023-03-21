@@ -1,6 +1,11 @@
+@font-face {
+  font-family: goodmono;
+  src: url(font.ttf);
+}
 body {
-  font-family: serif;
-  font-size: large;
+  background: #121212;
+  color: #e6e6e6;
+  font-family: goodmono;
   line-height: 1.5;
   max-width: 600px;
   margin: 0 auto;
