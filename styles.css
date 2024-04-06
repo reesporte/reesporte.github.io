@@ -5,6 +5,14 @@ body {
 a {
   color: darkgreen;
 }
+a:hover {
+  text-decoration: wavy underline;
+}
 pre {
   font-size: 2.5pt;
+}
+summary:hover {
+  cursor: pointer;
+  color: darkgreen;
+  text-decoration: wavy underline;
 }
